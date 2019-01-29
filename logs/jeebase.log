@@ -1133,3 +1133,19 @@ Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected
 	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
 	... 43 more
+2019-01-29 11:08:30,824 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-29 11:08:30,992 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Tue Jan 29 11:08:30 CST 2019]; root of context hierarchy
+2019-01-29 11:08:31,154 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\JAVA\idea\idea-pro\xzy-parent\xzy-manager\xzy-manager-web\target\classes\spring\applicationContext-dao.xml]
+2019-01-29 11:08:31,520 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\JAVA\idea\idea-pro\xzy-parent\xzy-manager\xzy-manager-web\target\classes\spring\applicationContext-service.xml]
+2019-01-29 11:08:31,814 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\JAVA\idea\idea-pro\xzy-parent\xzy-manager\xzy-manager-web\target\classes\spring\applicationContext-trans.xml]
+2019-01-29 11:08:32,680 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-29 11:08:35,681 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 4856 ms
+2019-01-29 11:08:35,850 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'xzy-manager': initialization started
+2019-01-29 11:08:35,859 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'xzy-manager-servlet': startup date [Tue Jan 29 11:08:35 CST 2019]; parent: Root WebApplicationContext
+2019-01-29 11:08:35,860 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2019-01-29 11:08:36,268 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-29 11:08:36,904 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/{itemId}]}" onto public xzy.manager.pojo.TbItem xzy.manager.controller.ItemController.getItemById(java.lang.Long)
+2019-01-29 11:08:37,751 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'xzy-manager-servlet': startup date [Tue Jan 29 11:08:35 CST 2019]; parent: Root WebApplicationContext
+2019-01-29 11:08:37,937 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'xzy-manager-servlet': startup date [Tue Jan 29 11:08:35 CST 2019]; parent: Root WebApplicationContext
+2019-01-29 11:08:38,309 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'xzy-manager': initialization completed in 2459 ms
+2019-01-29 11:10:08,816 [http-bio-8080-exec-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
