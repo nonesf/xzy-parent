@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xzy-parent</artifactId>
+        <groupId>com.xzy</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>xzy-manager</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>xzy-manager-pojo</module>
+        <module>xzy-manager-dao</module>
+        <module>xzy-manager-service</module>
+        <module>xzy-manager-serviceImp</module>
+        <module>xzy-manager-web</module>
+    </modules>
+
+    <!--依赖common-->
+    <dependencies>
+        <dependency>
+            <groupId>com.xzy</groupId>
+            <artifactId>xzy-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+      <!--  <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 配置Tomcat插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8080</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
